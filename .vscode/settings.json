@@ -1,0 +1,26 @@
+{
+    "files.exclude": {
+        "src/app.d.ts": true,
+        "src/app.html": true,
+        ".npmrc": true,
+        "/home/danny/projects/git_pr/sheet": true,
+        "tailwind.config.ts": true,
+        "postcss.config.js": true,
+        "svelte.config.js": true,
+        "vite.config.ts": true,
+        "tsconfig.json": true,
+        "package.json": true,
+        "LICENSE": true,
+        "README.md": true,
+        "pnpm-lock.yaml": true,
+        "components.json": true,
+        ".gitignore": true,
+        "src/routes/+page.js": true,
+        "src/lib/index.ts": true,
+        "src/lib/utils.ts": true,
+        "node_modules": true,
+        ".vscode": true,
+        ".svelte-kit": true,
+        "static": true
+    }
+}

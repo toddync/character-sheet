@@ -8,11 +8,12 @@ const config = {
     preprocess: vitePreprocess(),
 
     kit: {
-        // prerender: { default: true },
+        paths: {
+            base: "/character-sheet"
+        },
         adapter: adapter({
             pages: "build",
             assets: "build",
-            // fallback: "404.html",
             precompress: false,
             strict: true
         })

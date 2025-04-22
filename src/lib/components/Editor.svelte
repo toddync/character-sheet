@@ -110,7 +110,9 @@
     });
 </script>
 
-<div class="flex flex-col flex-1 pb-5 mx-auto select-none w-full">
+<div
+    class="flex flex-col flex-1 pb-5 mx-auto select-none w-full overflow-auto relative"
+>
     <EditorMenu {editor} />
 
     <EditorContent editor={$editor} class="editor" />

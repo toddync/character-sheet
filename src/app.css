@@ -79,19 +79,7 @@
 }
 
 .editor {
-    @apply w-[98%] mx-auto flex-1 prose dark:prose-invert prose-sm sm:prose-base lg:prose-lg xl:prose-xl flex;
-
-    * {
-        @apply !my-0 !py-0;
-    }
-}
-
-li {
-    @apply !my-0 !py-0 gap-2;
-
-    /* label {
-        @apply my-auto h-fit;
-    } */
+    @apply w-[98%] mx-auto flex-1 prose dark:prose-invert prose-sm sm:prose-base lg:prose-lg xl:prose-xl *:!my-0 *:!py-0;
 }
 
 .editorEl {

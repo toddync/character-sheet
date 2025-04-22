@@ -9,19 +9,13 @@ export const nodes = writable([
     {
         id: "initial",
         type: "Text",
-        position: {
-            x: 0,
-            y: 0
-        },
-        width: 550,
-        height: 200,
+        position: { x: 0, y: 0 },
+        width: 625,
+        height: 375,
         data: {
-            text: '<h2 style="text-align: left"><em>Welcome !!!</em></h2><p style="text-align: left"></p><p style="text-align: left">This is a <span style="color: rgb(0, 166, 244)">character sheet</span> tool designed to be as <span style="color: rgb(0, 166, 244)">modular</span> as possible.</p><p style="text-align: left"></p><p style="text-align: left">To start creation open the menu by hitting <mark class="highlight" data-color="rgba(0, 166, 244, 0.2)" style="background-color: rgba(0, 166, 244, 0.2); color: inherit">cmd+k</mark> or clicking the button on the top of the page.</p><p style="text-align: left"></p><p style="text-align: left">All nodes have a menu, accessible by right-clicking, to access some more option (<strong>like this one!!</strong>)</p>'
+            text: '<h3 style="text-align: left"><strong><em>Welcome!!!</em></strong></h3><p style="text-align: left">This is a <span style="color: rgb(0, 166, 244)">modular character sheet</span> tool — flexible, simple, and designed to <span style="color: rgb(0, 166, 244)">fit <em>your</em> style</span>.</p><h4 style="text-align: left">Getting Started:</h4><ul><li><p style="text-align: left">Open the main menu with <mark class="highlight" data-color="rgba(0, 166, 244, 0.2)" style="background-color: rgba(0, 166, 244, 0.2); color: inherit">Cmd+K</mark> or by clicking the top button.</p></li><li><p style="text-align: left">Add a node from the menu.</p></li><li><p style="text-align: left">Drag nodes around to reposition them however you like.</p></li><li><p style="text-align: left">Right-click any node to open its menu for more options.</p></li><li><p style="text-align: left">Edit fields directly or via the node’s menu (depending on the type).</p></li></ul><p style="text-align: left">And that’s it — build your sheet <span style="color: rgb(0, 166, 244)">your way</span>.<br><strong>Have fun! Profit!!!</strong></p>'
         },
-        measured: {
-            width: 550,
-            height: 200
-        },
+        measured: { width: 625, height: 375 },
         selected: false
     }
 ]);

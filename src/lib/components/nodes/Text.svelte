@@ -40,7 +40,7 @@
             >
                 <Card.Content
                     class="
-                            p-2 flex-1 overflow-auto max-h-full
+                            px-2 pt-2 pb-0 flex-1 overflow-auto max-h-full min-w-full
                             prose dark:prose-invert prose-sm
                             *:!my-0 *:!py-0"
                 >

@@ -35,7 +35,7 @@
         $editor?.isActive(name, attrs);
 </script>
 
-<div class="my-3">
+<div class="pt-4 pb-3 sticky -top-1 bg-black z-50">
     {#if $editor}
         <div
             class="flex space-x-1.5 rounded-md p-1.5 shadow-sm border-0 border-b rounded-none mx-5"

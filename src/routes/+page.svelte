@@ -6,15 +6,26 @@
     import { Background, BackgroundVariant, SvelteFlow } from "@xyflow/svelte";
     import { writable } from "svelte/store";
 
-    if (localStorage.getItem("sheet")) {
-        $nodes = JSON.parse(localStorage.getItem("sheet"));
-    }
-    if (localStorage.getItem("view")) {
-        $viewport = JSON.parse(localStorage.getItem("view"));
-    }
-    if (localStorage.getItem("lock")) {
-        $lock = JSON.parse(localStorage.getItem("lock"));
-    }
+    try {
+        let n = JSON.parse(localStorage.getItem("sheet"));
+        if (typeof n == "object" && "length" in n) {
+            $nodes = n;
+        }
+    } catch (e) {}
+
+    try {
+        let v = JSON.parse(localStorage.getItem("view"));
+        if (typeof v == "object" && "zoom" in v) {
+            $viewport = v;
+        }
+    } catch (e) {}
+
+    try {
+        let l = JSON.parse(localStorage.getItem("lock"));
+        if (typeof n == "boolean") {
+            $lock = l;
+        }
+    } catch (e) {}
 
     $effect(() => {
         localStorage.setItem("view", JSON.stringify($viewport));
@@ -33,7 +44,8 @@
         {nodeTypes}
         {nodes}
         nodesDraggable={!$lock}
-        fitView={localStorage.getItem("view") == null}
+        fitView={localStorage.getItem("view") == null ||
+            localStorage.getItem("view") == "undefined"}
     >
         <Background variant={BackgroundVariant.Dots} size={1} gap={25} />
     </SvelteFlow>

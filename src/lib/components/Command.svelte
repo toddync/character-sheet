@@ -79,6 +79,7 @@
                 $lock = data.lock;
             } catch (e) {}
         };
+        close();
     }
 
     function onkeydown(e: KeyboardEvent) {
@@ -104,7 +105,12 @@
             {/each}
         </Command.Group>
         <Command.Group heading="Commands">
-            <Command.Item onclick={() => ($lock = !$lock)}>
+            <Command.Item
+                onclick={() => {
+                    $lock = !$lock;
+                    close();
+                }}
+            >
                 {#if $lock}
                     <LockOpen class="mr-2 size-4" />
                     Unlock Nodes
@@ -122,6 +128,7 @@
                         x: Math.round(v.x / 25) * 25,
                         y: Math.round(v.y / 25) * 25
                     });
+                    close();
                 }}
             >
                 <Pin class="mr-2 size-4" />
@@ -142,8 +149,8 @@
 
 <input
     type="file"
+    class="hidden"
     accept="application/JSON"
     bind:this={input}
-    class="hidden"
     onchange={restore}
 />

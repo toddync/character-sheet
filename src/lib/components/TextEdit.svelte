@@ -17,7 +17,7 @@
         <Feather class="mr-2 size-4" />
         Edit
     </Drawer.Trigger>
-    <Drawer.Content class="min-h-[80svh] bg-black">
+    <Drawer.Content class="h-[80svh] bg-black">
         <Editor
             {content}
             bind:editable

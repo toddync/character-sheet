@@ -16,8 +16,7 @@ export const nodes = writable([
         width: 550,
         height: 200,
         data: {
-            content:
-                '<h2 style="text-align: left"><em>Welcome !!!</em></h2><p style="text-align: left"></p><p style="text-align: left">This is a <span style="color: rgb(0, 166, 244)">character sheet</span> tool designed to be as <span style="color: rgb(0, 166, 244)">modular</span> as possible.</p><p style="text-align: left"></p><p style="text-align: left">To start creation open the menu by hitting <mark class="highlight" data-color="rgba(0, 166, 244, 0.2)" style="background-color: rgba(0, 166, 244, 0.2); color: inherit">cmd+k</mark> or clicking the button on the top of the page.</p><p style="text-align: left"></p><p style="text-align: left">All nodes have a menu, accessible by right-clicking, to access some more option (<strong>like this one!!</strong>)</p>'
+            text: '<h2 style="text-align: left"><em>Welcome !!!</em></h2><p style="text-align: left"></p><p style="text-align: left">This is a <span style="color: rgb(0, 166, 244)">character sheet</span> tool designed to be as <span style="color: rgb(0, 166, 244)">modular</span> as possible.</p><p style="text-align: left"></p><p style="text-align: left">To start creation open the menu by hitting <mark class="highlight" data-color="rgba(0, 166, 244, 0.2)" style="background-color: rgba(0, 166, 244, 0.2); color: inherit">cmd+k</mark> or clicking the button on the top of the page.</p><p style="text-align: left"></p><p style="text-align: left">All nodes have a menu, accessible by right-clicking, to access some more option (<strong>like this one!!</strong>)</p>'
         },
         measured: {
             width: 550,

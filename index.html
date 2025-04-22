@@ -4,40 +4,33 @@
         <meta charset="utf-8" />
         <link rel="icon" href="./favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <link
-            rel="modulepreload"
-            href="./_app/immutable/entry/start.DoEa6cIp.js"
-        />
-        <link rel="modulepreload" href="./_app/immutable/chunks/Bb8oxiPq.js" />
-        <link rel="modulepreload" href="./_app/immutable/chunks/DQ4ISc1H.js" />
-        <link
-            rel="modulepreload"
-            href="./_app/immutable/entry/app.375Pz1HR.js"
-        />
-        <link rel="modulepreload" href="./_app/immutable/chunks/54c0vtkL.js" />
-        <link rel="modulepreload" href="./_app/immutable/chunks/BQ5rRwqh.js" />
-        <link rel="modulepreload" href="./_app/immutable/chunks/Cp4Wn3Cq.js" />
+        
+		<link rel="modulepreload" href="./_app/immutable/entry/start.Bzxtrfid.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/CYo6jq0T.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DQ4ISc1H.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.B-enxZiE.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/54c0vtkL.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BQ5rRwqh.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Cp4Wn3Cq.js">
     </head>
     <body data-sveltekit-preload-data="hover">
         <div style="display: contents">
-            <script>
-                {
-                    __sveltekit_ojq22c = {
-                        base: "./",
-                        assets: "./"
-                    };
+			<script>
+				{
+					__sveltekit_h09rde = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
 
-                    const element = document.currentScript.parentElement;
+					const element = document.currentScript.parentElement;
 
-                    Promise.all([
-                        import("./_app/immutable/entry/start.DoEa6cIp.js"),
-                        import("./_app/immutable/entry/app.375Pz1HR.js")
-                    ]).then(([kit, app]) => {
-                        kit.start(app, element);
-                    });
-                }
-            </script>
-        </div>
+					Promise.all([
+						import("./_app/immutable/entry/start.Bzxtrfid.js"),
+						import("./_app/immutable/entry/app.B-enxZiE.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
     </body>
 </html>
